@@ -8,4 +8,18 @@ trigger:
 
 pool:
   vmImage: windows-latest
+  
 
+steps:
+- task: UiPathPack@4
+  inputs:
+    versionType: 'CurrentVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)'
+    orchestratorConnection: 'TestSuiteDevOpsAtScale'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+- task: UiPathTest@4
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'TestSuiteDevOpsAtScale'
+    folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
+  
