@@ -11,15 +11,8 @@ pool:
   
 
 steps:
-- task: UiPathPack@4
+- task: UiPathRunJob@4
   inputs:
-    versionType: 'CurrentVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)'
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-- task: UiPathTest@4
-  inputs:
-    testTarget: 'TestProject'
-    orchestratorConnection: 'TestSuiteDevOpsAtScale'
+    processName: 'TestSuiteDevOpsAtScale'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
-  
