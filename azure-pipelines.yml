@@ -14,5 +14,5 @@ steps:
 - task: UiPathRunJob@4
   inputs:
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
-    processName: 'TestSuiteDevOpsAtScale'
+    processName: 'TSDO_TestSuiteDevOpsAtScale'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
