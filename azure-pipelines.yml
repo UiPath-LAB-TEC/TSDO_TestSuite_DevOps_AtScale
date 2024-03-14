@@ -10,7 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-
+- task: UiPathInstallPlatform@4
+  inputs:
+    cliVersion: 'X_23.10.8753.32995'
 - task: UiPathRunJob@4
   inputs:
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
