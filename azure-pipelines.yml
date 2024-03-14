@@ -8,9 +8,9 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-  
 
 steps:
+
 - task: UiPathRunJob@4
   inputs:
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
