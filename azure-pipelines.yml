@@ -10,11 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: UiPathInstallPlatform@4
+- task: UiPathTest@4
   inputs:
-    cliVersion: 'X_23.10.8753.32995'
-- task: UiPathRunJob@4
-  inputs:
+    testTarget: 'TestProject'
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
-    processName: 'TSDO_TestSuiteDevOpsAtScale'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
