@@ -10,9 +10,16 @@ pool:
   vmImage: windows-latest
 
 steps:
-- task: UiPathTest@4
+
+- task: UiPathRunJob@4
   inputs:
-    testTarget: 'TestSet'
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
-    testSet: 'UiBank Regression'
+    processName: 'TSDO_TestSuiteDevOpsAtScale'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
+
+#- task: UiPathTest@4
+ # inputs:
+  #  testTarget: 'TestSet'
+   # orchestratorConnection: 'TestSuiteDevOpsAtScale'
+    #testSet: 'UiBank Regression'
+    #folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
