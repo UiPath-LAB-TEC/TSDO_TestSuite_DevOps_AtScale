@@ -12,6 +12,8 @@ pool:
 steps:
 - task: UiPathTest@4
   inputs:
-    testTarget: 'TestProject'
+    testTarget: 'TestSet'
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
+    testSet: 'UiBank Regression'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
+    testReportDestination: 'output.xml'
