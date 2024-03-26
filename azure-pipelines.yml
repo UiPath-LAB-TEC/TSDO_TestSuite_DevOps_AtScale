@@ -28,6 +28,7 @@ steps:
     
 - task: UiPathRunJob@4
   displayName: 'Cleaning up the test environment'
+  continueOnError: true 
   inputs:
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
     processName: 'AppServerDelete'
