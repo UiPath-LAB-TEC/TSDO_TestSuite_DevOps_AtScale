@@ -14,12 +14,17 @@ steps:
 - task: UiPathRunJob@4
   inputs:
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
-    processName: 'TSDO_TestSuiteDevOpsAtScale'
+    processName: 'AppServerCreate'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
 
-#- task: UiPathTest@4
- # inputs:
-  #  testTarget: 'TestSet'
-   # orchestratorConnection: 'TestSuiteDevOpsAtScale'
-    #testSet: 'UiBank Regression'
-    #folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
+- task: UiPathTest@4
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'TestSuiteDevOpsAtScale'
+    folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
+    
+- task: UiPathRunJob@4
+  inputs:
+    orchestratorConnection: 'TestSuiteDevOpsAtScale'
+    processName: 'AppServerDelete'
+    folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
