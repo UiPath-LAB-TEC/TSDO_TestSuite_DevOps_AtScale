@@ -23,6 +23,7 @@ steps:
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
+    testSet: 'UiBank Regression'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
     
 - task: UiPathRunJob@4
