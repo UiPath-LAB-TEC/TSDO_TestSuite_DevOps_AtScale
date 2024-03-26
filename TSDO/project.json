@@ -1,0 +1,198 @@
+{
+  "name": "TSDO",
+  "projectId": "e3046da8-a0d7-4cb2-8b14-f87de36b6210",
+  "description": "Test Automation Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "[24.2.0-preview]",
+    "UiPath.Testing.Activities": "[24.2.0-preview]",
+    "UiPath.UIAutomation.Activities": "[24.2.0-preview]",
+    "UiPath.WebAPI.Activities": "[1.19.0-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.2.0.0",
+  "projectVersion": "1.0.164732410",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8e2e95b0-2c3d-4712-a24c-54458ec5cda1",
+        "testCaseType": "TestCase",
+        "fileName": "Assess policy term impact on premium calculation.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1b04f52d-1078-44eb-93ae-a3e4f645bbdc",
+        "testCaseType": "TestCase",
+        "fileName": "Check coverage amount impact on premium calculation.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c0ace06c-98f2-4d7e-b7cb-803616d626cc",
+        "testCaseType": "TestCase",
+        "fileName": "Check the password length requirement.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0de2ba2f-19f7-4455-bdcb-ba5bc88384a3",
+        "testCaseType": "TestCase",
+        "fileName": "Examine health conditions impact on premium calculation.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "612a59f5-b88a-42d8-ab9a-626a9ac821b8",
+        "testCaseType": "TestCase",
+        "fileName": "Test smoking status impact on premium calculation.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "16309db6-c9be-46be-b619-785d0b107e01",
+        "testCaseType": "TestCase",
+        "fileName": "Validate gender consideration in premium calculation.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7f9fb605-659c-4390-8a70-7d83de19d934",
+        "testCaseType": "TestCase",
+        "fileName": "Verify age impact on premium calculation.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "03949461-526b-4bc8-858e-3a0d7951490e",
+        "testCaseType": "TestCase",
+        "fileName": "Verify the presence of registration page.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4d357b8e-a6e8-4793-a60e-33c813d2cc6e",
+        "testCaseType": "TestCase",
+        "fileName": "Test input of transfer amount.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f493d57e-7846-41b7-88d4-1026a229ae94",
+        "testCaseType": "TestCase",
+        "fileName": "Test successful registration.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3af52db1-c851-4e88-94e5-0f165dd752d3",
+        "testCaseType": "TestCase",
+        "fileName": "Test transfer execution.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d0701ff0-d437-4a0f-81d9-b76be7d2ab8e",
+        "testCaseType": "TestCase",
+        "fileName": "Validate account selection for fund transfer.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6c73ad41-a18f-480d-9605-8839e0c04a74",
+        "testCaseType": "TestCase",
+        "fileName": "Validate conditional transfer limits.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0dcc3d4c-5d63-45c3-8e15-514d2c5dec3d",
+        "testCaseType": "TestCase",
+        "fileName": "Validate error handling for fund transfer.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "805b09d0-9fc3-4900-8791-5890dd7b3887",
+        "testCaseType": "TestCase",
+        "fileName": "Validate the email uniqueness.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "42ea447a-5cb8-4270-9329-02151924dfda",
+        "testCaseType": "TestCase",
+        "fileName": "Verify loan application for applicants below 18 years of age.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "dba8e08a-7f18-441c-a881-1b9a3c2c2c1c",
+        "testCaseType": "TestCase",
+        "fileName": "Verify loan application with valid data and loan amount below 100.000.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "78da252a-eff3-48ff-82b4-d533ae44b5f6",
+        "testCaseType": "TestCase",
+        "fileName": "Verify loan application with valid data and loan amount over 100.000.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "26da127d-f82d-4cf5-8bdd-fb497d9de241",
+        "testCaseType": "TestCase",
+        "fileName": "Verify loan application without filling all mandatory fields.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "62c19757-46ed-4282-9074-fe0b66fbf55c",
+        "testCaseType": "TestCase",
+        "fileName": "Verify the password complexity.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3968b3f2-dd11-46ee-9adb-3700757f90a1",
+        "testCaseType": "TestCase",
+        "fileName": "Validate the email format.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6a077625-c166-4c22-8336-e85595e800cc",
+        "testCaseType": "TestCase",
+        "fileName": "Verify transaction history update.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f39f8eb6-2a97-4516-aae9-327ee79b78a6",
+        "testCaseType": "TestCase",
+        "fileName": "Verify transfer confirmation dialog.cs"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b5caadec-8df8-4cd8-a942-3e7a158bb174",
+        "testCaseType": "TestCase",
+        "fileName": "Verify user authentication before fund transfer.cs"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "CSharp",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Portable"
+}

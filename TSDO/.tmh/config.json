@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/uipathlabs/DemoRepository/testmanager_",
+  "defaultProject": {
+    "id": "95b858cd-ec30-0000-e693-0b468c524227",
+    "name": "TestSuite Devops at Scale",
+    "key": "TSDO"
+  }
+}
