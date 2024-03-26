@@ -22,9 +22,9 @@ steps:
   displayName: 'Running functional tests'
   continueOnError: true 
   inputs:
-    testTarget: 'TestSet'
+    testTarget: 'TestProject'
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
-    testSet: 'UiBank Regression'
+    testProjectPath: 'TSDO/project.json'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
     
 - task: UiPathRunJob@4
