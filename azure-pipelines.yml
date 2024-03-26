@@ -11,15 +11,16 @@ pool:
 
 steps:
 
-- task: UiPathRunJob@4
-  displayName: 'Setting up the test environment'
-  inputs:
-    orchestratorConnection: 'TestSuiteDevOpsAtScale'
-    processName: 'AppServerCreate'
-    folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
+#- task: UiPathRunJob@4
+ # displayName: 'Setting up the test environment'
+ # inputs:
+  #  orchestratorConnection: 'TestSuiteDevOpsAtScale'
+   # processName: 'AppServerCreate'
+    #folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
  
 - task: UiPathTest@4
   displayName: 'Running functional tests'
+  continueOnError: true 
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
@@ -28,7 +29,6 @@ steps:
     
 - task: UiPathRunJob@4
   displayName: 'Cleaning up the test environment'
-  continueOnError: true 
   inputs:
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
     processName: 'AppServerDelete'
