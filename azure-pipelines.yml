@@ -15,7 +15,7 @@ steps:
   displayName: 'Setting up the test environment'
   inputs:
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
-    processName: 'AppServerCreate'
+    processName: 'TSDO_AppServerCreate'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
  
 - task: UiPathTest@4
@@ -31,5 +31,5 @@ steps:
   displayName: 'Cleaning up the test environment'
   inputs:
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
-    processName: 'AppServerDelete'
+    processName: 'TSDO_AppServerDelete'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
