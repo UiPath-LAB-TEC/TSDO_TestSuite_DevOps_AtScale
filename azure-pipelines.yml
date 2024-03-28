@@ -16,7 +16,6 @@ steps:
   inputs:
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
     processName: 'TSDO_AppServerCreate'
-    parametersFilePath: 'jobParameters.json'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
  
 - task: UiPathTest@4
