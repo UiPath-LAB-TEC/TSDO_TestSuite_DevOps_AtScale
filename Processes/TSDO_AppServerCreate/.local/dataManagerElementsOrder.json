@@ -1,0 +1,30 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "AppServerVM_Template_Image&Sequence_2",
+        "AppServerVM&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "AppServerVM_Auth_Password",
+        "AppServerVM_Auth_Username",
+        "AppServerVm_Template",
+        "AppServerVM_Name",
+        "AppServerVM_ResourceGroup",
+        "AppServerVM_Template_RG"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
