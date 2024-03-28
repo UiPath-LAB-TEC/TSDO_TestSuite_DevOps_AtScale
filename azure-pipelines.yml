@@ -1,0 +1,35 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: windows-latest
+
+steps:
+
+- task: UiPathRunJob@4
+  displayName: 'Setting up the test environment'
+  inputs:
+    orchestratorConnection: 'TestSuiteDevOpsAtScale'
+    processName: 'TSDO_AppServerCreate'
+    folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
+ 
+- task: UiPathTest@4
+  displayName: 'Running functional tests'
+  continueOnError: true 
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'TestSuiteDevOpsAtScale'
+    testProjectPath: 'TSDO/project.json'
+    folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
+    
+- task: UiPathRunJob@4
+  displayName: 'Cleaning up the test environment'
+  inputs:
+    orchestratorConnection: 'TestSuiteDevOpsAtScale'
+    processName: 'TSDO_AppServerDelete'
+    folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
