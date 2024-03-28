@@ -24,7 +24,7 @@ steps:
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'TestSuiteDevOpsAtScale'
-    testProjectPath: 'TSDO/project.json'
+    testProjectPath: 'Processes/TSDO/project.json'
     folderName: 'InternalDemos/TSDO_TestSuite_DevOps_AtScale'
     
 - task: UiPathRunJob@4
